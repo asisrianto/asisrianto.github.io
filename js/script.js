@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const chatLink = document.querySelector('.chatlink');
+    const chatLink = document.querySelector('.chat-link');
     if (chatLink) {
         chatLink.addEventListener('click', (e) => {
             e.preventDefault();
