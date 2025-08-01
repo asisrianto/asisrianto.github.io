@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.textContent = newTheme === 'light' ? '🌞' : '🌙';
     });
 
+    const chatLink = document.querySelector('.chat-link');
+    if (chatLink) {
+        chatLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const countryCode = '628';
+            const subscriberNumber = '3130131383' 
+            window.location.href = `https://wa.me/${countryCode}${subscriberNumber}`;
+        });
+    }
+
     const mailLink = document.querySelector('.mail-link');
     if (mailLink) {
         mailLink.addEventListener('click', (e) => {
@@ -26,12 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const chatLink = document.querySelector('.chat-link');
-    if (chatLink) {
-        chatLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            const phoneNumber = '6283130131383';
-            window.location.href = `https://wa.me/${phoneNumber}`;
-        });
-    }
 });
